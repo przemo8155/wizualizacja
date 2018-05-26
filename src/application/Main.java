@@ -12,6 +12,8 @@ import javafx.scene.layout.BorderPane;
 
 public class Main extends Application {
 
+	public static Stage sharedStage;
+
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -25,6 +27,7 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.setMaximized(false);
 			primaryStage.show();
+			setSharedStage(primaryStage);
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -32,5 +35,17 @@ public class Main extends Application {
 
 	public static void main(String[] args) {
 		launch(args);
+	}
+
+
+	public static Stage getSharedStage()
+	{
+		return sharedStage;
+	}
+
+
+	public void setSharedStage(Stage sharedStage)
+	{
+		this.sharedStage = sharedStage;
 	}
 }

@@ -23,7 +23,7 @@
             <ToggleButton fx:id="slupkowyToggleButton" layoutX="56.0" layoutY="156.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
             <ToggleButton fx:id="kolowyToggleButton" layoutX="171.0" layoutY="157.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" />
             <Label fx:id="sciezkaLabel" layoutX="75.0" layoutY="335.0" text="Ścieżka" />
-            <TextField fx:id="sciezkaTextField" layoutX="75.0" layoutY="365.0" />
+            <TextField fx:id="sciezkaTextField" layoutX="75.0" layoutY="365.0" prefHeight="25.0" prefWidth="501.0" />
             <Button fx:id="wybierzPlikButton" layoutX="74.0" layoutY="408.0" mnemonicParsing="false" onMouseClicked="#wybierzPlikButton_OnAction" text="Wybierz plik" />
             <Label fx:id="kolorystykaLabel" layoutX="556.0" layoutY="109.0" text="Kolorystyka" />
             <RadioButton fx:id="kolor1RadioButton" layoutX="513.0" layoutY="157.0" mnemonicParsing="false" text="Domyślna" />
